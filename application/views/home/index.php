@@ -1,4 +1,4 @@
 
-    <h1><?php $nama ?></h1>
+    <h1>Hello, <?php $nama ?></h1>
 
    
