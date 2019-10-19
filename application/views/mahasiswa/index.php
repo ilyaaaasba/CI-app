@@ -35,6 +35,9 @@
                                 <td><?= $mhs['nrp']; ?></td>
                                 <td><?= $mhs['email']; ?></td>
                                 <td><?= $mhs['jurusan']; ?></td>
+                                <td><a href="<?= base_url(); ?>mahasiswa/detail/<?= $mhs['id']; ?>" class="badge badge-primary float-right">detail</a></td>
+			      <td><a href="<?= base_url(); ?>mahasiswa/ubah/<?= $mhs['id']; ?>" class="badge badge-success float-right">ubah</a></td>
+			      <td><a href="<?= base_url(); ?>mahasiswa/hapus/<?= $mhs['id']; ?>" class="badge badge-danger float-right" onclick="return confirm('Yakin untuk Menghapus ?');">hapus</a></td>
                             </tr>
                             <?php endforeach; ?>
                          </tbody>
