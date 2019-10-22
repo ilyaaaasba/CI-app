@@ -27,7 +27,7 @@
                  </tr>
                  </thead>
                  <tbody>
-                    <?= if (empty($peoples)) : ?>
+                    <? if (empty($peoples)) : ?>
                     <tr>
                         <td colspan="4">
                             <div class="alert-danger" role="alert">
@@ -35,22 +35,22 @@
                             </div>
                         </td>
                     </tr>
-                <?= endif; ?>
-                <?= foreach ($peoples as $people) : ?>
+                <? endif; ?>
+                <? foreach ($peoples as $people) : ?>
                     <tr>
                         <th><?= ++$start; ?></th>
-                        <td><?= $people['name'] ?></td>
-                        <td><?= $people['email'] ?></td>
+                        <td><?= $people['name']; ?></td>
+                        <td><?= $people['email']; ?></td>
                         <td>
                             <a href="" class="badge badge-warning">detail</a>
                             <a href="" class="badge badge-success">edit</a>
                             <a href="" class="badge badge-danger">delete</a>
                         </td>
                     </tr>
-                    <?= endforeach; ?>
+                    <? endforeach; ?>
                  </tbody>
             </table>
-            <?= $this->pagination->create_link(); ?>
+            <?= $this->pagination->create_links(); ?>
         </div>
      </div>
 </div>
